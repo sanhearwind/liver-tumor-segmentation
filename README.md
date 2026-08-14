@@ -88,6 +88,7 @@ terms. Do not commit patient-derived images or generated NIfTI volumes.
 The code was written for a Python 3 environment with CUDA-enabled PyTorch
 recommended. Main dependencies are:
 
+<<<<<<< HEAD
 ```text
 PyTorch
 MONAI
@@ -157,6 +158,8 @@ be committed.
 - Record the dataset split, checkpoint, patch size, calibration parameters,
   and dependency versions with each experiment.
 
+=======
+>>>>>>> 7142c83b049e1e77b76c3aa0b2d7adc5548296d3
 ## Responsible use
 
 This repository is for research and software-development purposes. It is not
