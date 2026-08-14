@@ -1,0 +1,38 @@
+# Python and local tooling
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+
+# Private data, checkpoints, predictions, and logs
+*.nii
+*.nii.gz
+*.dcm
+*.pth
+*.pt
+*.ckpt
+*.onnx
+*.npz
+*.npy
+*.pkl
+*.log
+outputs/*
+!outputs/.gitkeep
+data/
+datasets/
+checkpoints/
+
+# Experiment/cache artifacts
+.cache/
+wandb/
+mlruns/
+tmp/
+*.tmp
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
