@@ -88,7 +88,6 @@ terms. Do not commit patient-derived images or generated NIfTI volumes.
 The code was written for a Python 3 environment with CUDA-enabled PyTorch
 recommended. Main dependencies are:
 
-<<<<<<< HEAD
 ```text
 PyTorch
 MONAI
@@ -99,9 +98,7 @@ tqdm
 requests
 ```
 
-Install versions compatible with the target CUDA/PyTorch runtime. Exact
-versions are intentionally not pinned in this snapshot because the original
-training environment was a machine-specific AutoDL runtime.
+Install versions compatible with the target CUDA/PyTorch runtime. 
 
 ## Running the pipeline
 
@@ -158,8 +155,6 @@ be committed.
 - Record the dataset split, checkpoint, patch size, calibration parameters,
   and dependency versions with each experiment.
 
-=======
->>>>>>> 7142c83b049e1e77b76c3aa0b2d7adc5548296d3
 ## Responsible use
 
 This repository is for research and software-development purposes. It is not
