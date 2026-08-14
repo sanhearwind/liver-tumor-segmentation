@@ -32,11 +32,6 @@ The core dependencies are Python, PyTorch, MONAI, NumPy, SciPy, NiBabel, and
 scikit-image. Pin exact versions after confirming the runtime used for the
 final experiment, then record them in `requirements.txt`.
 
-## Notifications
-
-Notification credentials are read from `AUTODL_WECHAT_TOKEN` at runtime and
-must never be committed to this repository.
-
 ## Responsible use
 
 This is a research/portfolio code release, not a clinically validated medical
