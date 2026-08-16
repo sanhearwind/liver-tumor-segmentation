@@ -1,0 +1,7 @@
+experiment,best_epoch_or_setting,liver_dice,tumor_dice,evaluation_scope
+Initial full-volume model,145,0.9223,0.5717,held-out validation
+Fine-tuned full-volume model,45,0.9454,0.5906,held-out validation
+Heavy Stage 1,745,0.9533,0.6755,held-out validation
+Two-stage true cascade,130,0.9545,0.6875,held-out validation
+Calibrated Stage 2,"bias=0.75; min_volume=400",,0.6790,19 validation cases
+Four-way TTA,"bias=1.05; min_volume=200",,0.6861,19 validation cases

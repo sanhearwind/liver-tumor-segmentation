@@ -155,6 +155,33 @@ be committed.
 - Record the dataset split, checkpoint, patch size, calibration parameters,
   and dependency versions with each experiment.
 
+## Validation results
+
+The repository includes aggregate validation records from the retained
+experiments in [`results/validation_metrics.csv`](results/validation_metrics.csv).
+They are held-out validation results from the LiTS training cohort, not scores
+from the official hidden-label LiTS test server.
+
+| Experiment | Best epoch / setting | Liver Dice | Tumor Dice |
+| --- | ---: | ---: | ---: |
+| Initial full-volume model | 145 | 0.9223 | 0.5717 |
+| Fine-tuned full-volume model | 45 | 0.9454 | 0.5906 |
+| Heavy Stage 1 | 745 | 0.9533 | 0.6755 |
+| Two-stage true cascade | 130 | 0.9545 | 0.6875 |
+| Calibrated Stage 2 | bias=0.75; min volume=400 | — | 0.6790 |
+| Four-way TTA | bias=1.05; min volume=200 | — | 0.6861 |
+
+The charts are generated from retained experiment records and contain no
+patient-level identifiers:
+
+- [Stage-wise comparison](assets/figures/stage-comparison.svg)
+- [Training curves](assets/figures/training-curves.svg)
+
+These runs use different checkpoints and settings, so the table should be
+read as an experiment history rather than a controlled ablation study. No
+individual CT slice, label volume, case number, or per-case CSV is included in
+the public repository.
+
 ## Responsible use
 
 This repository is for research and software-development purposes. It is not
